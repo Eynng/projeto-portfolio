@@ -9,7 +9,7 @@
 html, body {
     height: 100vh;
     width: 100vw;
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(230, 230, 230);
 }          
 
 
@@ -19,8 +19,9 @@ html, body {
 
 body {
     background: url('imagens/fundo.jpg') no-repeat top center;
-    background-size: cover;
+    
     background-attachment: fixed;
+
 }
 
 
@@ -28,22 +29,39 @@ body {
 
 
 header {
-    background-color: rgb(53, 117, 255);
+    height: 5vh;
+    width: 100%;
+    background-color: #3575ff;
     color: white;
+    position: fixed;
+    top: 0;
 }
 
 img.eu {
     width: 200px;
     height: 200px;
     border-radius: 200px;
-    border: 2px solid rgb(53, 117, 255);
-    padding: 2px;
+    border: 3px solid rgb(105, 152, 255);
+    padding: 3px;
 
     display: block;
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
 
+}
+
+.icone {
+    width: 35px;
+    height: 35px;
+}
+
+div.apresentacao {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
 }
 
 
@@ -55,19 +73,26 @@ h1 {
 
 h2 { 
     color: rgb(53, 117, 255);
+    font-size: 1.5em;
+    
 } 
+
+p {
+    color: rgb(156, 156, 156);
+    font-size: 1.1em;
+}
 
 
 main.container {
-    width: 100%;
-    height: 100%;
+    
     margin: 0px;
-    padding-top: 15px;
+    padding-top: 65px;
 
     display: grid;
     gap: 15px;
 
     grid-template-columns: 0px 400px 1fr 0px;
+    grid-template-rows: 100% 50% repeat(3, 90%);
     
 }
 
@@ -81,20 +106,62 @@ div.ficha {
 
 
     border-radius: 20px;
+    height: 140%;
 
     grid-column-start: 2;
     grid-column-end: 3;
 
     background-color: rgb(255, 255, 255);
-    height: 91%;
-    
-
 }
 
-div.detalhes {
-    border-radius: 20px;
+div.detalhe1 {
+    width: 96%;
+    height: 95%;
 
+    padding: 15px;
+    border-radius: 20px;
     background-color: rgb(255, 255, 255);
+
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+div.detalhe2 {
+    width: 96%;
+    height: 90%;
+
+    padding: 15px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+
+    grid-column-start: 3;
+    grid-column-end: 4;
+ }
+ div.detalhe3 {
+    width: 96%;
+    height: 94%;
+
+    padding: 15px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+
+    grid-column-start: 3;
+    grid-column-end: 4;
+ }
+ div.detalhe4 {
+    width: 96%;
+    height: 90%;
+
+    padding: 15px;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+
+    grid-column-start: 3;
+    grid-column-end: 4;
+ }
+
+footer {
+    
 }
 
 
