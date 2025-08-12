@@ -51,6 +51,11 @@ img.eu {
 
 }
 
+img.projetoImage {
+    width: 200px;
+    
+}
+
 .icone {
     width: 35px;
     height: 35px;
@@ -64,8 +69,20 @@ div.apresentacao {
     gap: 10px;
 }
 
+div.social {
+    padding: 3px;
 
-                /* corpo do site */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+                /* TEXTO DO SITE */
 
 h1 {
     color: rgb(53, 117, 255);
@@ -82,6 +99,8 @@ p {
     font-size: 1.1em;
 }
 
+            /* CONTAINER'S */
+
 
 main.container {
     
@@ -92,7 +111,7 @@ main.container {
     gap: 15px;
 
     grid-template-columns: 0px 400px 1fr 0px;
-    grid-template-rows: 100% 50% repeat(3, 90%);
+    grid-template-rows: 40% 20% repeat(3, auto);
     
 }
 
@@ -101,12 +120,13 @@ div.ficha {
     padding: 15px;
 
     display: flex;
-    flex-direction: column;
+    flex-flow: column ;
     align-items: start;
+    justify-content: space-evenly;
 
 
     border-radius: 20px;
-    height: 140%;
+    height: 115%;
 
     grid-column-start: 2;
     grid-column-end: 3;
@@ -139,7 +159,7 @@ div.detalhe2 {
  }
  div.detalhe3 {
     width: 96%;
-    height: 94%;
+    height: auto;
 
     padding: 15px;
     border-radius: 20px;
@@ -159,9 +179,21 @@ div.detalhe2 {
     grid-column-start: 3;
     grid-column-end: 4;
  }
+ 
 
-footer {
+ section.projetos{
+
+    background-color: rgb(230, 230, 230);
+    border-radius: 20px;
     
-}
+
+    display: flex;
+    flex-flow: row nowrap;
+
+    padding: 15px;
+    margin: 15px;
+
+
+ }
 
 
